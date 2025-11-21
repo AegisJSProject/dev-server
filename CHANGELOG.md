@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [v1.0.2] - 2025-11-21
+
+### Fixed
+- Fix image source in CSP -> `img-src`
+
 ## [v1.0.1] - 22025-11-21
 
 ### Added
