@@ -42,7 +42,7 @@ export const getCSP = () => [
 	'default-src ' + DEFAULT_SRC.join(' '),
 	'script-src ' + SCRIPT_SRC.join(' '),
 	'style-src ' + STYLE_SRC.join(' '),
-	'image-src ' + IMAGE_SRC.join(' '),
+	'img-src ' + IMAGE_SRC.join(' '),
 	'media-src ' + MEDIA_SRC.join(' '),
 	'font-src ' + FONT_SRC.join(' '),
 	'frame-src ' + FRAME_SRC.join(' '),
