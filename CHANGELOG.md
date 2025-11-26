@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [v1.0.4] - 2025-11-26
+
+### Changed
+- Switch to using `@aegisproject/http-utils` for CSP
+
 ## [v1.0.3] - 2025-11-26
 
 ### Added

@@ -1,5 +1,6 @@
 import { readFile } from 'node:fs/promises';
 import { imports } from '@shgysk8zer0/importmap';
+import { useCSP as CSP } from '@aegisjsproject/http-utils/csp.js';
 
 const pkg = JSON.parse(await readFile(process.cwd() + '/package.json', { encoding: 'utf8' }));
 
@@ -50,3 +51,17 @@ export const getCSP = () => [
 	'tusted-types ' + TRUSTED_TYPES.join(' '),
 	'require-trusted-types-for \'script\'',
 ].join('; ');
+
+export const useCSP = ({ ...rest } = {}) => CSP({
+	'default-src': DEFAULT_SRC,
+	'script-src': SCRIPT_SRC,
+	'style-src': STYLE_SRC,
+	'img-src': IMAGE_SRC,
+	'media-src': MEDIA_SRC,
+	'font-src': FONT_SRC,
+	'frame-src': FRAME_SRC,
+	'connect-src': CONNECT_SRC,
+	'tusted-types': TRUSTED_TYPES,
+	'require-trusted-types-for': '\'script\'',
+	...rest
+});
