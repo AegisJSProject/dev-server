@@ -1,6 +1,6 @@
 import { readFile } from 'node:fs/promises';
 import { imports } from '@shgysk8zer0/importmap';
-import { getCSP, importmap, integrity } from './csp.js';
+import { importmap, integrity } from './csp.js';
 
 const NO_MAP = ['controller', 'socket', 'reject', 'signal', 'resolve'];
 
@@ -32,10 +32,7 @@ export default async (req, context) => {
 				4
 			)),
 		{
-			headers: {
-				'Content-Type': 'text/html',
-				'Content-Security-Policy': getCSP(),
-			}
+			headers: { 'Content-Type': 'text/html' }
 		}
 	);
 };
