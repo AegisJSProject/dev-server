@@ -7,6 +7,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [v1.0.5] - 2025-12-09
+
+### Removed
+- Remove own version of CSP handler
+
 ## [v1.0.4] - 2025-11-26
 
 ### Changed

@@ -1,6 +1,8 @@
 import { readFile } from 'node:fs/promises';
-import { imports } from '@shgysk8zer0/importmap';
-import { importmap, integrity } from './csp.js';
+import { Importmap, imports, scopes } from '@shgysk8zer0/importmap';
+const importmap = new Importmap({ imports, scopes });
+await importmap.importLocalPackage();
+const integrity = await importmap.getIntegrity();
 
 const NO_MAP = ['controller', 'socket', 'reject', 'signal', 'resolve'];
 
