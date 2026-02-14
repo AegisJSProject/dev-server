@@ -67,7 +67,7 @@
   "homepage": "https://github.com/AegisJSProject/dev-server#readme",
   "devDependencies": {
     "@shgysk8zer0/eslint-config": "^1.0.4",
-    "eslint": "^9.39.1"
+    "eslint": "^10.0.0"
   },
   "dependencies": {
     "@shgysk8zer0/http-server": "^1.1.1",
