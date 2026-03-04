@@ -1,6 +1,6 @@
 {
   "name": "@aegisjsproject/dev-server",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "Dev server setup for `@shgysk8zer0/http-server`",
   "keywords": [
     "dev-server",
@@ -66,11 +66,11 @@
   },
   "homepage": "https://github.com/AegisJSProject/dev-server#readme",
   "devDependencies": {
-    "@shgysk8zer0/eslint-config": "^1.0.4",
-    "eslint": "^10.0.0"
+    "@shgysk8zer0/eslint-config": "^1.0.7",
+    "eslint": "^10.0.2"
   },
   "dependencies": {
     "@shgysk8zer0/http-server": "^1.1.1",
-    "@shgysk8zer0/importmap": "^1.5.1"
+    "@shgysk8zer0/importmap": "^1.8.1"
   }
 }
